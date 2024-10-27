@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virsadhara</title>
+    <link rel="stylesheet" href="blogging.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LET US BLOG!!</h1>
+            
+        </header>
+        <main>
+            <section class="add-article">
+                <h2>Add New Article</h2>
+                <form id="articleForm">
+                    <input type="text" id="articleTitle" placeholder="Article Title" required>
+                    <textarea id="articleContent" rows="4" placeholder="Article Content" required></textarea>
+                    <button type="submit" class="submit-button">Save as Draft</button>
+                </form>
+            </section>
+            <section class="drafts">
+                <h2>Draft Articles</h2>
+                <div id="drafts"></div>
+            </section>
+        </main>
+    </div>
+    <script src="blog.js"></script>
+</body>
+</html>

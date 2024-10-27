@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto; /* Center the container */
+    padding: 20px;
+}
+
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Larger font for title */
+    color: #af7d38; /* Accent color for the title */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0; /* Space below nav list */
+}
+
+.nav-list li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Space between items */
+}
+
+.nav-list li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.nav-list li a:hover {
+    color: #af7d38; /* Change color on hover */
+}
+
+main {
+    background-color: #1a1a1a; /* Dark gray for main content area */
+    padding: 20px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.add-article, .drafts {
+    margin-bottom: 20px; /* Space below sections */
+}
+
+.add-article h2, .drafts h2 {
+    margin: 0 0 10px; /* Space below section titles */
+    color: #af7d38; /* Accent color for section titles */
+}
+
+.add-article input, .add-article textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    margin: 10px 0; /* Space above and below */
+    border: 1px solid #af7d38; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark background for inputs */
+    color: #fff; /* White text */
+}
+
+.submit-button {
+    background-color: #af7d38; /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.submit-button:hover {
+    background-color: #85602d; /* Darker brown on hover */
+}
+
+.drafts {
+    margin-top: 20px; /* Space above drafts section */
+}
+
+.draft-post {
+    background-color: #333; /* Darker background for drafts */
+    padding: 10px; /* Padding for drafts */
+    margin-bottom: 10px; /* Space below each draft */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.draft-post h4 {
+    margin: 0; /* Remove default margin */
+    color: #af7d38; /* Title color for drafts */
+}
+
+.draft-post p {
+    color: white; /* White text for draft content */
+}

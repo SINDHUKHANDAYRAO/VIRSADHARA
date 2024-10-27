@@ -1,0 +1,96 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container Styling */
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Category Grid Styling */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-box {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Icon Styling */
+.category-box i {
+    color: #af7d38;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.category-box:hover i {
+    color: #fff;
+}
+
+.category-box h2 {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.category-box p {
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+/* Login Link Styling */
+.login-link {
+    margin-top: 30px;
+}
+
+.login-link a {
+    color: #af7d38;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.login-link a:hover {
+    color: #fff;
+}

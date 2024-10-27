@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <div class="login-options">
+        <button onclick="showForm('admin')">Login as Admin</button>
+        <button onclick="showForm('user')">Login as Existing User</button>
+        <button onclick="showForm('new-user')">Register as New User</button>
+    </div>
+    
+    <form id="admin-form" class="login-form" action="/admin-login" method="POST">
+        <input type="text" name="admin-username" placeholder="Admin Username" required>
+        <input type="password" name="admin-password" placeholder="Admin Password" required>
+        <input type="submit" value="Login as Admin">
+    </form>
+    
+    <form id="user-form" class="login-form" action="/user-login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login as User">
+    </form>
+    
+    <form id="new-user-form" class="login-form" action="/register" method="POST">
+        <input type="text" name="new-username" placeholder="New Username" required>
+        <input type="password" name="new-password" placeholder="New Password" required>
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+<script>
+    function showForm(formType) {
+        document.getElementById('admin-form').style.display = 'none';
+        document.getElementById('user-form').style.display = 'none';
+        document.getElementById('new-user-form').style.display = 'none';
+        
+        if (formType === 'admin') {
+            document.getElementById('admin-form').style.display = 'block';
+        } else if (formType === 'user') {
+            document.getElementById('user-form').style.display = 'block';
+        } else if (formType === 'new-user') {
+            document.getElementById('new-user-form').style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

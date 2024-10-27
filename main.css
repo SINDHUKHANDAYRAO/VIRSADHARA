@@ -1,0 +1,63 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f0ea; /* Light pastel brown background */
+    color: #4b4b4b; /* Dark gray text color */
+}
+
+.content {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular logo */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.title {
+    font-size: 100px;
+    color: #4b4b4b; /* Dark color for title */
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #7a5e40; /* Brown color on hover */
+}
+
+.tagline {
+    font-size: 18px;
+    color: #856a4f; /* Soft brown for tagline */
+    margin-bottom: 40px;
+    font-family:cursive;
+}
+
+.home-link {
+    font-size: 16px;
+    color: #4b4b4b;
+    text-decoration: none;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #4b4b4b; /* Darker background on hover */
+    color: #e08618; /* Light color on hover */
+}

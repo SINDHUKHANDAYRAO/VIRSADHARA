@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-form, .profile-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    background-color: #3e3e3e;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #af7d38;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9f6b2c;
+}
+
+.profile-card {
+    text-align: left;
+}
+
+.profile-card p {
+    margin: 5px 0;
+}
+
+.profile-icon {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.handshake-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.handshake-animation img {
+    width: 200px;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(-45%, -50%);
+    }
+    75% {
+        transform: translate(-55%, -50%);
+    }
+}
+.profile-form, .profile-card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px; /* Reduced from 250px */
+    margin: 10px;
+    text-align: center;
+}
+
+.profile-icon {
+    width: 80px; /* Reduced from 100px */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #af7d38;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9f6b2c;
+}

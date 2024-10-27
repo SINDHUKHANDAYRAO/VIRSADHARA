@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connections.css">
+    <title>Profile Cards</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-form">
+            <h1>Create Your Profile</h1>
+            <form id="profileForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <textarea id="interests" placeholder="Interests" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <button id="findMatch">Find a Match</button>
+        </div>
+
+        <div class="profiles">
+            <div class="profile-card" id="profileCard1">
+                <img src="images/profile.jpg" alt="Profile Icon" class="profile-icon" />
+                <h1 id="profileName1">User Profile 1</h1>
+                <p>Email: <span id="profileEmail1"></span></p>
+                <p>Interests: <span id="profileInterests1"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="handshakeAnimation" class="handshake-animation" style="display: none;">
+        <img src="images/handshake.png" alt="Handshake Animation" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
